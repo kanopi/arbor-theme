@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: social
+label: Social
+description: 'A menu used to store social media links.'
+locked: false

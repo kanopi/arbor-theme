@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.banner
+  module:
+    - block_class
+    - system
+  theme:
+    - arbor
+third_party_settings:
+  block_class:
+    classes: 'd-block d-lg-none'
+id: arbor_banner
+theme: arbor
+region: navigation_collapsible
+weight: -5
+provider: null
+plugin: 'system_menu_block:banner'
+settings:
+  id: 'system_menu_block:banner'
+  label: Banner
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

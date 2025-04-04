@@ -1,0 +1,77 @@
+name: 'Arbor - Theme recipe'
+description: 'Configures Arbor theme and dependent modules and UI Bootstrap base theme.'
+type: 'Site'
+install:
+  # Core.
+  - help
+  # Contrib.
+  - arbor
+  - block_class
+  - ds
+  - ds_extras
+  - field_group
+  - layout_options
+  - sdc_display
+  - twig_tweak
+  - ui_patterns
+  - ui_patterns_ds
+  - ui_patterns_field_group
+  - ui_patterns_layouts
+  - ui_patterns_library
+  - ui_skins
+  - ui_styles
+  - ui_suite_bootstrap
+config:
+  strict: false
+  import:
+    # Only Display suite has config.
+    ds: "*"
+    # Import blocks that Stark does not automatically create below.
+    arbor:
+      - block.block.arbor_breadcrumbs
+      - block.block.arbor_content
+      - block.block.arbor_footer
+      - block.block.arbor_help
+      - block.block.arbor_mainnavigation
+      - block.block.arbor_main_menu
+      - block.block.arbor_messages
+      - block.block.arbor_page_title
+      - block.block.arbor_sitebranding_footer
+  actions:
+    # Allow Display Suite on fields and Layouts.
+    ds.settings:
+      simpleConfigUpdate:
+        field_template: true
+        ft-layout-builder: true
+    # When a theme is enabled in Drupal, the blocks of the existing theme are
+    # automaticaly duplicated. In our case, on minimal, the theme is Stark.
+    # We set the blocks we don't want to false, and alter the config of the
+    # blocks that were created.
+    block.block.arbor_admin:
+      setStatus: false
+    block.block.arbor_branding:
+      setRegion: navigation
+      setWeight: 0
+    block.block.arbor_local_actions:
+      setRegion: header
+      setWeight: 20
+    block.block.arbor_local_tasks:
+      setRegion: header
+      setWeight: 10
+    block.block.arbor_page_title:
+      setStatus: true
+      setRegion: content
+      setWeight: -30
+      simpleConfigUpdate:
+        visibility.request_path.id: request_path
+        visibility.request_path.negate: false
+        visibility.request_path.pages: '/user/*'
+    block.block.arbor_tools:
+      setStatus: false
+    # Set the default theme.
+    system.theme:
+      simpleConfigUpdate:
+        default: arbor
+    # Allow anonymous users to access patterns page.
+    user.role.anonymous:
+      grantPermission: 'access patterns page'
