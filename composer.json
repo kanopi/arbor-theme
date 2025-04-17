@@ -30,7 +30,7 @@
         "drupal/layout_options": "^1.4",
         "drupal/sdc_display": "^2.0@beta",
         "drupal/twig_tweak": "^3.3",
-        "drupal/ui_patterns": "^2.0",
+        "drupal/ui_patterns": "^2",
         "drupal/ui_skins": "^1.0@alpha",
         "drupal/ui_styles": "^1.7",
         "drupal/ui_suite_bootstrap": "^5.1@alpha",
