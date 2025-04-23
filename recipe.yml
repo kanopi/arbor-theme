@@ -10,9 +10,11 @@ install:
   - ds
   - ds_extras
   - field_group
+  - layout_discovery
   - layout_options
   - sdc_display
   - twig_tweak
+  - ui_icons_backport
   - ui_patterns
   - ui_patterns_layouts
   - ui_patterns_library
