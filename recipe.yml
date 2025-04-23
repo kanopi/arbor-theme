@@ -16,6 +16,7 @@ install:
   - twig_tweak
   - ui_icons_backport
   - ui_patterns
+  - ui_patterns_field_formatters
   - ui_patterns_layouts
   - ui_patterns_library
   - ui_skins
