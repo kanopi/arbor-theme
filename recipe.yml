@@ -14,8 +14,6 @@ install:
   - sdc_display
   - twig_tweak
   - ui_patterns
-  - ui_patterns_ds
-  - ui_patterns_field_group
   - ui_patterns_layouts
   - ui_patterns_library
   - ui_skins
