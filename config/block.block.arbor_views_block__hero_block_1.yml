@@ -4,7 +4,6 @@ dependencies:
   config:
     - views.view.hero
   module:
-    - block_class
     - views
   theme:
     - arbor
