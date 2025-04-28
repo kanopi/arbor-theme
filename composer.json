@@ -34,6 +34,7 @@
         "drupal/ui_skins": "^1.0@alpha",
         "drupal/ui_styles": "^1.7",
         "drupal/ui_suite_bootstrap": "^5.1@alpha",
-        "kanopi/arbor": "^1"
+        "kanopi/arbor": "^1",
+        "npm-asset/bootstrap-icons": "*"
     }
 }

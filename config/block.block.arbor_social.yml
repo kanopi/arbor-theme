@@ -7,11 +7,10 @@ dependencies:
     - system
   theme:
     - arbor
-third_party_settings: {  }
 id: arbor_social
 theme: arbor
-region: footer
-weight: -4
+region: footer_social
+weight: 0
 provider: null
 plugin: 'system_menu_block:social'
 settings:
