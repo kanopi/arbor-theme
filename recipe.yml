@@ -14,7 +14,10 @@ install:
   - layout_options
   - sdc_display
   - twig_tweak
+  - ui_icons
   - ui_icons_backport
+  - ui_icons_field
+  - ui_icons_picker
   - ui_patterns
   - ui_patterns_field_formatters
   - ui_patterns_layouts
