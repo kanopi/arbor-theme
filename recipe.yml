@@ -31,7 +31,17 @@ config:
     # Only Display suite has config.
     ds: "*"
     # Import theme blocks.
-    arbor: "*"
+    arbor:
+      - block.block.arbor_branding
+      - block.block.arbor_breadcrumbs
+      - block.block.arbor_content
+      - block.block.arbor_footer
+      - block.block.arbor_help
+      - block.block.arbor_local_actions
+      - block.block.arbor_local_tasks
+      - block.block.arbor_main_menu
+      - block.block.arbor_messages
+      - block.block.arbor_page_title
   actions:
     # Allow Display Suite on fields and Layouts.
     ds.settings:
